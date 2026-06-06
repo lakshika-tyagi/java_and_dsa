@@ -7,6 +7,8 @@ public class Input {
 
 //        array of primitives
         int [] arr = new int[5];
+        System.out.println(Arrays.toString(arr));
+
         arr[0] = 23;
         arr[1] = 45;
         arr[2] = 33;
@@ -40,6 +42,7 @@ public class Input {
         }
 
         System.out.println(Arrays.toString(arr1));
+        System.out.println(arr1); //[Ljava.lang.String;@681a9515
 
     }
 }
