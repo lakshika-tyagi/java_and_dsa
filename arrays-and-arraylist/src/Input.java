@@ -18,20 +18,21 @@ public class Input {
 
 //        easy way to print the array
         System.out.println(Arrays.toString(arr));
+        System.out.println(arr);
 
 //        input using for loops
-        for (int i = 0; i < 5; i++) {
-            arr[i] = input.nextInt();
-        }
+//        for (int i = 0; i < 5; i++) {
+//            arr[i] = input.nextInt();
+//        }
 
 //        for (int i = 0; i < 5; i++) {
 //            System.out.print(arr[i] + " ");
 //        }
 
-        for(int i : arr){
-            System.out.print(i + " ");
-        }
-        System.out.println(" ");
+//        for(int i : arr){
+//            System.out.print(i + " ");
+//        }
+//        System.out.println(" ");
 
 //        System.out.println(arr[6]); //index out of bound error
 
