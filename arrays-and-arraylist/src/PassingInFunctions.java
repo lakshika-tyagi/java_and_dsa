@@ -1,4 +1,4 @@
-public class PassingInFunctions {
+public class PassinginFunctions {
     static void main() {
 
     }

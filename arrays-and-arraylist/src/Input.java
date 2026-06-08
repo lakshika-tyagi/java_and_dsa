@@ -6,33 +6,34 @@ public class Input {
         Scanner input = new Scanner(System.in);
 
 //        array of primitives
-//        int [] arr = new int[5];
-//        System.out.println(Arrays.toString(arr));
+        int [] arr = new int[5];
+        System.out.println(Arrays.toString(arr));
 
-//        arr[0] = 23;
-//        arr[1] = 45;
-//        arr[2] = 33;
-//        arr[3] = 50;
-//        arr[4] = 76;
-//        System.out.println(arr[3]);
+        arr[0] = 23;
+        arr[1] = 45;
+        arr[2] = 33;
+        arr[3] = 50;
+        arr[4] = 76;
+        System.out.println(arr[3]);
 
 //        easy way to print the array
-//        System.out.println(Arrays.toString(arr));
-//        System.out.println(arr);
+        System.out.println(Arrays.toString(arr));
+        System.out.println(arr);
 
 //        input using for loops
-//        for (int i = 0; i < 5; i++) {
-//            arr[i] = input.nextInt();
-//        }
+        for (int i = 0; i < 5; i++) {
+            arr[i] = input.nextInt();
+        }
 
-//        for (int i = 0; i < 5; i++) {
-//            System.out.print(arr[i] + " ");
-//        }
+        for (int i = 0; i < 5; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println(" ");
 
-//        for(int i : arr){
-//            System.out.print(i + " ");
-//        }
-//        System.out.println(" ");
+        for(int i : arr){
+            System.out.print(i + " ");
+        }
+        System.out.println(" ");
 
 //        System.out.println(arr[6]); //index out of bound error
 
