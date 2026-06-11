@@ -18,15 +18,11 @@ public class PeakIndexInMountainArray {
         int low = 0;
         int high = arr.length -1;
         int mid;
-        while(low <= high){
+        while(low < high){
             mid = low + (high - low)/2;
-            int s = mid-1, e = mid+1;
-            if(e >= arr.length) e = arr.length - 1;
-            if(s <= -1) s = 0;
-            if(arr[mid] >= arr[e] && arr[mid] >= arr[s])return mid;
-            else if(arr[mid] >= arr[e])high = s;
-            else if(arr[mid] >= arr[s])low = e;
+            if(arr[mid] < arr[mid+1])low = mid+1;
+            else high = mid;
         }
-        return -1;
+        return low;
     }
 }
