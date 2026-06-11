@@ -9,7 +9,6 @@ public class FloorOfANumber {
         System.out.println(floorNumber(arr,17));
         System.out.println(floorNumber(arr,15));
         System.out.println(floorNumber(arr,13));
-        System.out.println(floorNumber(arr,10));
         System.out.println(floorNumber(arr,8));
         System.out.println(floorNumber(arr,6));
         System.out.println(floorNumber(arr,4));
