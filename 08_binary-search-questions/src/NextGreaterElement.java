@@ -20,9 +20,9 @@ public class NextGreaterElement {
         int low = 0;
         int high = arr.length -1;
         if(arr[high] <= key || key < arr[low]) return arr[low];
-        while(low < high){
+        while(low <= high){
             int mid = low + (high - low)/2;
-            if(arr[mid] > key) high = mid;
+            if(arr[mid] > key) high = mid-1;
             else low = mid + 1 ;
         }
         return arr[low];
