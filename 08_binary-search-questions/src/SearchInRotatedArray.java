@@ -8,6 +8,8 @@ public class SearchInRotatedArray {
         System.out.println(searchIndex(arr,3));
         System.out.println(searchIndex(arr1,0));
 
+        int[] arr2 = {4,5,5,5,5,6,7,8,9,10,0,1,1,2};
+        System.out.println(searchIndex(arr2,1));
 
     }
 
