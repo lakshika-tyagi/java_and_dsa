@@ -1,4 +1,6 @@
 public class SearchInRotatedArray {
+
+//    not for duplicate values
     static void main() {
         int[] arr = {4,5,7,0,1,2};
         int [] arr1 = {1};
@@ -8,7 +10,7 @@ public class SearchInRotatedArray {
         System.out.println(searchIndex(arr,3));
         System.out.println(searchIndex(arr1,0));
 
-        int[] arr2 = {4,5,5,5,5,6,7,8,9,10,0,1,1,2};
+        int[] arr2 = {4,5,6,7,8,9,10,0,1,2};
         System.out.println(searchIndex(arr2,1));
 
     }

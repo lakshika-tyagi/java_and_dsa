@@ -9,6 +9,9 @@ public class RotationCount {
         int[] arr2 = {11,13,15,17};
         System.out.println(count(arr2));
 
+        int [] arr3 = {15,18,2,3,6,12};
+        System.out.println(count(arr3));
+
     }
 
     static int count(int [] arr){
