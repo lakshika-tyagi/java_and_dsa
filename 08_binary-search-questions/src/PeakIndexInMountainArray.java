@@ -13,16 +13,20 @@ public class PeakIndexInMountainArray {
         System.out.println(peakIndexInMountainArray(arr1));
         System.out.println(peakIndexInMountainArray(arr2));
         System.out.println(peakIndexInMountainArray(arr3));
+
+        int[] arr4 = {0,1,2,3,4,5,9,19,8};
+        System.out.println(peakIndexInMountainArray(arr4));
     }
     static int peakIndexInMountainArray(int[] arr) {
         int low = 0;
         int high = arr.length -1;
         int mid;
-        while(low <= high){
+        while(low < high){
             mid = low + (high - low)/2;
             if(arr[mid] < arr[mid+1])low = mid+1;
-            else high = mid-1;
+            else high = mid;
         }
-        return low;
+        return arr[low];
+
     }
 }
