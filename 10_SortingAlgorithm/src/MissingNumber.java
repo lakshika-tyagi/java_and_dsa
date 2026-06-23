@@ -1,6 +1,12 @@
 public class MissingNumber {
     static void main() {
 
+        int [] arr = {4,0,2,1};
+        System.out.println(missingNumber(arr));
+
+        int [] arr1 = {0,1};
+        System.out.println(missingNumber(arr1));
+
     }
     static void sortArray(int [] arr){
         int n = arr.length;
