@@ -24,5 +24,18 @@ public class MissingNumber {
         }
     }
 
-
+    static int missingNumber(int [] arr){
+        sortArray(arr);
+        int n = arr.length;
+        int i = 0;
+        while(i < n){
+            if(arr[i] == i){
+                i++;
+            }
+            else{
+                return i;
+            }
+        }
+        return i;
+    }
 }
