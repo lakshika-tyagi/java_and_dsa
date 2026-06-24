@@ -14,9 +14,10 @@ public class FirstMissingPositive {
         System.out.println(firstMissing(arr2));
 
         int[] arr3 = {1};
-        sort(arr3);
-        System.out.println(Arrays.toString(arr3));
         System.out.println(firstMissing(arr3));
+
+        int [] arr4 = {};
+        System.out.println(firstMissing(arr4));
 
 
     }
@@ -46,7 +47,7 @@ public class FirstMissingPositive {
         sort(nums);
         int i = 0;
         for ( i = 0; i < nums.length; i++) {
-            if(nums[i] != i + 1)return i+1;
+            if(nums[i]  != i + 1 )return i+1;
         }
         return i+1;
     }
