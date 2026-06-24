@@ -17,5 +17,8 @@ public class Main {
 
         System.out.println(a + b);
 //        only b is changed , a has still the same value
+
+        System.out.println(name.charAt(0));
+//        System.out.println(name.charAt(20));  //StringIndexOutOfBoundsException
     }
 }
