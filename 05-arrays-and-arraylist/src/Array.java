@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Array{
     static void main() {
 //        syntax of array
@@ -18,5 +20,11 @@ public class Array{
 
         String[] arr = new String[4];
         System.out.println(arr[2]);
+
+//        memory reference variable
+        int[] a = {10,20,30};
+        int [] b = a;
+        b[0] = 99;
+        System.out.println(Arrays.toString(a));   //despite of changing only b, a is also changed because a and b both points to same variable
     }
 }
