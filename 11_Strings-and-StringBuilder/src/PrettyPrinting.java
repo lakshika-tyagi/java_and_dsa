@@ -12,5 +12,8 @@ public class PrettyPrinting {
         System.out.printf("hex value of 999 is : %x\n",num.hashCode());
         System.out.printf("Octal value of %d is %o\n",num,num);
 
+        Date today = new Date();
+        System.out.printf("Current date and time : %tc\n",today);
+
     }
 }
