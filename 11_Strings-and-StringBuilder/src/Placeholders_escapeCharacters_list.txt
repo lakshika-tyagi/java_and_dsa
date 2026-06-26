@@ -1,0 +1,25 @@
+There are many format specifiers we can use. Here are some common ones:
+
+%c - Character
+%d - Decimal number (base 10)
+%e - Exponential floating-point number
+%f - Floating-point number
+%i - Integer (base 10)
+%o - Octal number (base 8)
+%s - String
+%u - Unsigned decimal (integer) number
+%x - Hexadecimal number (base 16)
+%tc - Date/time
+%n - Newline
+%b - boolean
+
+
+\b - Insert backspace
+\f - Next line's first character starts to the right of current line's last character
+\n - Insert newline
+\r - Insert carriage return    {A carriage return is a control character that moves the cursor back to the beginning of the current line without advancing to the next one}
+\t - Insert tab
+\\ - Insert backslash
+%% - Insert percentage sign
+
+2$ - specifies that we'd like to attach the second argument from the list of arguments to this specifier
