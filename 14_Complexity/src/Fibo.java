@@ -3,6 +3,7 @@ public class Fibo {
     static void main() {
 
         System.out.println(fibo(10));
+        System.out.println(fibo(0));
 
     }
 
