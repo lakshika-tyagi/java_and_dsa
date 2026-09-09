@@ -5,7 +5,13 @@ public class Main {
         Son son = new Son(23);
         son.career();
 
-        Daughter daughter = new Daughter(17);
+        Parent daughter = new Daughter(17);
         daughter.career();
+
+//        Parent mom = new Parent();      //you cannot create object of an abstract class
+
+        Parent.hello();
+        son.normal();
+
     }
 }
