@@ -18,7 +18,7 @@ public abstract class Parent {
         System.out.println("this is normal method");
     }
 
-//    abstract public Parent(int age);
+//    abstract public Parent(int age);   //gives error
 
     abstract void career();
 
