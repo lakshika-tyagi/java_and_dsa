@@ -3,7 +3,7 @@ package interfaces;
 public class NiceCar {
     private Engine engine;
 
-    private Media player;
+    private Media player = new CDPlayer();
 
     public NiceCar() {
         engine = new PowerEngine();
@@ -22,9 +22,16 @@ public class NiceCar {
     }
 
     public void startMusic() {
-        engine.stop();
+        player.start();
     }
 
+    public void stopMusic() {
+        player.stop();
+    }
+
+    public void upgradeEngine() {
+        this.engine = new ElectricEngine();
+    }
 
 
 }
