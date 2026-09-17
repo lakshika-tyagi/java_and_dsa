@@ -16,6 +16,11 @@ public class CustomArrayList {
         if (isFull()) {
             resize();
         }
+        data[size++] = num;
+    }
+
+    private boolean isFull() {
+        return size == data.length;
     }
 
 
