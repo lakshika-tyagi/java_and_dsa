@@ -1,19 +1,26 @@
 package generics;
 
-import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
-public class CustomArrayList {
+//https://docs.oracle.com/javase/tutorial/java/generics/restrictions.html#createObjects
 
-    private int[] data;
+public class CustomGenericArrayList<T> {
+
+    private T[] data;
     private static int DEFAULT_SIZE = 10;
     private int size = 0;  //also working as index value
 
-    public CustomArrayList() {
-        this.data = new int[DEFAULT_SIZE];
+    public CustomGenericArrayList() {
+        this.data = new T[DEFAULT_SIZE];
     }
 
-    public void add(int num) {
+    public static <E> void append(List<E> list, Class<E> cls) throws Exception {
+        E elem = cls.newInstance();   // OK
+        list.add(elem);
+    }
+
+    public void add(T num) {
         if (isFull()) {
             resize();
         }
@@ -21,7 +28,7 @@ public class CustomArrayList {
     }
 
     private void resize() {
-        int[] temp = new int[data.length * 2];
+        T[] temp = new T[data.length * 2];
 //        copy the current items in the current array
         for (int i = 0; i < data.length; i++) {
             temp[i] = data[i];
@@ -60,7 +67,7 @@ public class CustomArrayList {
     static void main() {
 //        ArrayList<Object> list = new ArrayList<>();
 
-        CustomArrayList list = new CustomArrayList();
+        CustomGenericArrayList list = new CustomGenericArrayList();
 //        list.add(3);
 //        list.add(5);
 //        list.add(9);
