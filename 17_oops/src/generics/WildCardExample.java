@@ -1,17 +1,17 @@
 package generics;
 
 import java.util.Arrays;
-import java.util.List;
 
 //https://docs.oracle.com/javase/tutorial/java/generics/restrictions.html#createObjects
 
-public class CustomGenericArrayList<T> {
+// here T should be Number or any of its subclasses
+public class WildCardExample<T extends Number> {
 
     private Object[] data;
     private static int DEFAULT_SIZE = 10;
     private int size = 0;  //also working as index value
 
-    public CustomGenericArrayList() {
+    public WildCardExample() {
         this.data = new Object[DEFAULT_SIZE];
     }
 
@@ -73,7 +73,8 @@ public class CustomGenericArrayList<T> {
 
 //        System.out.println(list);
 
-        CustomGenericArrayList<Integer> list3 = new CustomGenericArrayList<>();
+        WildCardExample<Integer> list3 = new WildCardExample<>();
+        WildCardExample<Number> list4 = new WildCardExample<>();
         list3.add(34);
         for (int i = 0; i < 14; i++) {
             list3.add(2 * i);
