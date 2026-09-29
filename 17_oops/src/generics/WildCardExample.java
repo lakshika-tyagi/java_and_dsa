@@ -1,6 +1,7 @@
 package generics;
 
 import java.util.Arrays;
+import java.util.List;
 
 //https://docs.oracle.com/javase/tutorial/java/generics/restrictions.html#createObjects
 
@@ -13,6 +14,12 @@ public class WildCardExample<T extends Number> {
 
     public WildCardExample() {
         this.data = new Object[DEFAULT_SIZE];
+    }
+
+    public void getList(List<? extends Number> list) {
+//        do something
+//        here you can only pass Number type  <Number>
+//        you can pass int , float , double , or any number type <? extends Number>
     }
 
     public void add(T num) {
