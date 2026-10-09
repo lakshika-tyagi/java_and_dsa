@@ -7,7 +7,14 @@ public class Main {
         int a = 5;
         int b = 0;
         try {
-            divide(a, b);
+//            divide(a, b);
+            String name = "Lakshika";
+            if (name.equals("Lakshika")) {
+                throw new MyException("name is lakshikaaa");
+            }
+
+        } catch (MyException e) {
+            System.out.println(e.getMessage());
         } catch (ArithmeticException e) {
             System.out.println(e.getMessage());
         } catch (IndexOutOfBoundsException e) {
