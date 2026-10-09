@@ -14,7 +14,7 @@ public class Main {
 
     }
 
-    static int divide(int a, int b) {
+    static int divide(int a, int b) throws ArithmeticException {
         if (b == 0) {
             throw new ArithmeticException("please do not divivde by zero");
         }
