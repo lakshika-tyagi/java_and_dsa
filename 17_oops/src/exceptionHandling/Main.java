@@ -1,5 +1,7 @@
 package exceptionHandling;
 
+import java.io.IOException;
+
 public class Main {
     static void main() {
         int a = 5;
@@ -8,6 +10,10 @@ public class Main {
             divide(a, b);
         } catch (ArithmeticException e) {
             System.out.println(e.getMessage());
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println("index is out of bounds");
+        } catch (Exception e) {
+            System.out.println("normal exception");
         } finally {
             System.out.println("this will always execute !");
         }
