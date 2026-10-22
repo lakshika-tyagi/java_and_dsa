@@ -34,6 +34,8 @@ public class Main {
         list2.insertLast(23);
         list2.insertLast(45);
 
+        list2.insert(45,65);
+
         list2.display();
     }
 }
